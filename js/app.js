@@ -98,16 +98,16 @@ function buscar(nombre, estudiantes) {
     // return estudiantes.filter(if (nombreEstudiante==estudiantes[0].nombre) );
 
 
-function topTecnico(estudiantes) {
-    // TO DO: Retornar el arreglo de estudiantes ordenado por puntaje técnico de mayor a menor
-    return estudiantes.sort(function (a, b) {//se utiliza el metodo .sort para ordenar los porcentajes tecnicos
-        return a.porcentajeT < b.porcentajeT;
-    });
-}
+    function topTecnico(estudiantes) {
+        // TO DO: Retornar el arreglo de estudiantes ordenado por puntaje técnico de mayor a menor
+       return estudiantes.sort(function (a, b) {//se utiliza el metodo .sort para ordenar los porcentajes tecnicos
+         return a.porcentajeT < b.porcentajeT;
+       });
+     }
 
-function topHSE(estudiantes) {
-    // TO DO: Retornar el arreglo de estudiantes ordenado por puntaje de HSE de mayor a menor
-    return estudiantes.sort(function (a, b) { //se utiliza el metodo .sort para ordenar los porcentajes tecnicos
-        return a.porcentajeHSE < b.porcentajeHSE;
-    });
-}
+     function topHSE(estudiantes) {
+         // TO DO: Retornar el arreglo de estudiantes ordenado por puntaje de HSE de mayor a menor
+         return estudiantes.sort(function (a, b) { //se utiliza el metodo .sort para ordenar los porcentajes tecnicos
+            return a.porcentajeHSE < b.porcentajeHSE;
+        });
+     }
