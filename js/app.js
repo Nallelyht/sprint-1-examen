@@ -59,10 +59,10 @@ function mostrarLista(estudiantes) {
     //   }
     //   return resultado;
     var resultado = "";
-    estudiantes.forEach(function(estudiante){
+    estudiantes.forEach(function(estudiante){ // se pasa por la funcion para agregar en la variable suma los estudiantes y muestre la lista
       resultado += mostrar(estudiante);
     });
-    return resultado 
+    return resultado
 }
 
 function buscar(nombre, estudiantes) {
@@ -88,7 +88,7 @@ function buscar(nombre, estudiantes) {
     //
     //
     var buscarEstudiante = estudiantes.filter(function(estudiante){
-      return estudiante.nombre.toLowerCase() === nombre.toLocaleLowerCase();
+      return estudiante.nombre.toLowerCase() === nombre.toLocaleLowerCase();//se ocupa el metodo filter para buscar el estudiante
     });
     return buscarEstudiante;
        //devolver el resultado
